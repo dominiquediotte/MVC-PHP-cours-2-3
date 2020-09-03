@@ -15,8 +15,8 @@
         </thead>
         <tbody>
             <tr>
-                <td><?php echo $user->getFirstName(); ?></td>
-                <td><?php echo $user->getLastName(); ?></td>
+                <td><?php if (isset($user)) { echo $user->getFirstName(); } ?></td>
+                <td><?php if (isset($user)) { echo $user->getLastName(); } ?></td>
             </tr>
         </tbody>
     </table>

@@ -23,7 +23,8 @@ class UserModel extends DBModel
     public function getUser($userID)
     {
         $result = $this->mysqli->query('CALL ' . self::GET_USER_BY_ID_PROC_NAME . '(' . $userID . ');');
-
+        $user = null;
+        
         while ($row = $result->fetch_assoc()) {
             $user = new UserDTO($row['id_user'], $row['first_name'], $row['last_name']);
         }
