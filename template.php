@@ -57,6 +57,28 @@
         </table>
     </div>
 
+    <div class="container" id="grid">
+        <div class="row">
+            <div class="col-sm-6 col-md-3" style="background-color: tomato;"></div>
+            <div class="col" style="background-color: turquoise;"></div>
+            <div class="col" style="background-color: yellow;"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6" style="background-color: teal;"></div>
+            <div class="col" style="background-color: orange;"></div>
+            <div class="col" style="background-color: thistle;"></div>
+            <div class="col" style="background-color: royalblue;"></div>
+        </div>
+        <div class="row row-cols-2">
+            <div class="col" style="background-color: orchid;"></div>
+            <div class="col" style="background-color: peru;"></div>
+            <div class="col" style="background-color: plum;"></div>
+            <div class="col" style="background-color: wheat;"></div>
+            <div class="col" style="background-color: mediumslateblue;"></div>
+            <div class="col" style="background-color: chartreuse;"></div>
+        </div>
+    </div>
+
     <?php require('includeJS.php') ?>
 </body>
 
