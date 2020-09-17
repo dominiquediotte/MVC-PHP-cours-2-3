@@ -1,9 +1,11 @@
 <?php
 
 require_once('view.php');
+require_once('controller.php');
 
-class UserController
+class UserController extends Controller
 {
+    private const SHOW_USERS_TITLE = 'Users';
     private $userModel;
 
     public function __construct($userModel)
@@ -20,7 +22,8 @@ class UserController
 
         $view = new View('usersView.php');
 
-        echo $view->render($data);
+        $content = $view->render($data);
+        $this->renderTemplateWithContent(self::SHOW_USERS_TITLE, $content);
     }
 
     public function showUser($userID)
